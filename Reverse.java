@@ -1,17 +1,17 @@
-package home;
-
-public class Remove_Duplicates {
-
-	
-	
-		public static void main(String args[]){  
-		//Declaring String variable  
-		String s="200";  
-		//Converting String into int using Integer.parseInt()  
-		int i=Integer.parseInt(s);  
-		//Printing value of i  
-		System.out.println(i);  
-		}}  
-	
-	
-
+public class Reverse   
+{    
+    public static void main(String[] args) {    
+        String string = "Dream bigger and bigger";    
+       
+        String reversedStr = "";    
+            
+       
+        for(int i = string.length()-1; i >= 0; i--){    
+            reversedStr = reversedStr + string.charAt(i);    
+        }    
+            
+        System.out.println("Original string: " + string);    
+      
+        System.out.println("Reverse of given string: " + reversedStr);    
+    }    
+}    
