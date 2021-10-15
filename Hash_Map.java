@@ -2,7 +2,8 @@ package home;
 
 import java.util.HashMap;
 public class Hash_Map {
-	public static void main(String[] args) {
+	
+
 	String str = "aaaaa bbbbbb c";
     str = str.toLowerCase();
     HashMap<Character,Integer>dataMap= new HashMap<>();
