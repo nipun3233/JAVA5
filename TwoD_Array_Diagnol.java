@@ -5,28 +5,25 @@ public class TwoD_Array_Diagnol {
 	{
 		int arr[][] = { { 1, 0, 0 }, { 0, 1, 0 }, { 1, 1, 1 } };
 
-		int ans = arr[0][0];
+		int var=arr[0][0];
 		boolean flag  = false;
 		for (int i = 0; i < 3; i++) {
-
 			for (int j = 0; j < 3; j++) {
 				if (i == j) {
 
-					if (arr[i][j] == ans) {
+					if (arr[i][j] == var) {
 						flag  = true;
 					}else {
 						flag = false;
 						System.out.println("False");
 						break;
 					}
-
 				}
 			}
 			if(!flag) {
 				break;
 			}
 		}
-		
 		if(flag) {
 			System.out.println("True");
 		}
