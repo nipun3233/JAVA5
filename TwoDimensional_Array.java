@@ -1,7 +1,31 @@
 package LeetCode;
 import java.util.*;
 public class TwoDimensional_Array {
-	public int[][] construct2DArray(int[] original, int m ,int n){
+	public static int[][] construct2DArray(int[] arr, int r ,int c){
+		int[][] mat= new int[r][c];  
+		int n = arr.length;
+		int k=0;
+//		if(arr.length != 0) {
+			if(r*c==n) {
+				for(int i=0;i<r;i++) {
+					for(int j=0;j<c;j++) {
+						mat[i][j]=arr[k];
+						k++;
+					}
+				}	
+			}
+			
+//			}
+			
+			
+			for(int i=0;i<r;i++) {
+				for(int j=0;j<c;j++) {
+					System.out.print(mat[i][j]);
+				}
+				System.out.println("");
+			}
+			
+		return null;
 		
 	}
 	public static void main(String[] args) {
@@ -17,27 +41,12 @@ public class TwoDimensional_Array {
 			System.out.print(arr[i]);
 		}
 		
-		System.out.println("\n enter the size of rows and column of your matrix");
+		System.out.println("\nenter the size of rows and column of your matrix");
 		int r =sc.nextInt();
-		int k =0;
 		int c = sc.nextInt();
-		int[][] mat= new int[r][c];  
-
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<c;j++) {
-				mat[i][j]=arr[k];
-				k++;
-			}
-		}
 		
 		
-		for(int i=0;i<r;i++) {
-			for(int j=0;j<c;j++) {
-				System.out.print(mat[i][j]);
-			}
-			System.out.println("");
-		}
-		
+		construct2DArray(arr , r,c);
 		
 		
 	sc.close();			
