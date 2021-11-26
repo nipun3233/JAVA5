@@ -23,19 +23,19 @@ public class LinkedList {
 		node2.data = 2;
 		
 		LinkedList node3 = new LinkedList();
-		node1.data = 3;
+		node3.data = 3;
 		
 		LinkedList node4 = new LinkedList();
-		node2.data = 4;
+		node4.data = 4;
 		
 		LinkedList node5 = new LinkedList();
-		node1.data = 5;
+		node5.data = 5;
 		
 		LinkedList node6 = new LinkedList();
-		node2.data = 6;
+		node6.data = 6;
 	
 		node1.next =node2;
-		node2.next =node3;
+		node2.next =node3; 
 		node3.next =node4;
 		node4.next =node5;
 		node5.next =node6;
